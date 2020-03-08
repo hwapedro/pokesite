@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/lib/animate.css" />
     <link rel="stylesheet" href="./css/fonts/fonst.css" />
     <link rel="stylesheet" href="./css/pokedex/index.css" />
-    <script src="./js/index.js"></script>
+    <script src="./js/lib/jq.js"></script>
+    <script src="./js/pokedex.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -78,98 +80,33 @@
       </div>
     </section> -->
     <section>
-      <div class="pokemons_containers">
-        <div class="pokemon_container">
-          <div>
-            <div class="pokemon_img">
-              <img src="" />
-            </div>
-            <div class="pokemon_info">
-              <div class="pokemon_info_number">№001</div>
-              <div class="pokemon_info_name">Бульбазавар</div>
-              <div>
-                <span class="pokemon_info_type_grass">Трава</span
-                ><span class="pokemon_info_type_poison">Яд</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pokemon_container">
-          <div>
-            <div class="pokemon_img">
-              <img src="" />
-            </div>
-            <div class="pokemon_info">
-              <div class="pokemon_info_number">№001</div>
-              <div class="pokemon_info_name">Бульбазавар</div>
-              <div>
-                <span class="pokemon_info_type_grass">Трава</span
-                ><span class="pokemon_info_type_poison">Яд</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pokemon_container">
-          <div>
-            <div class="pokemon_img">
-              <img src="" />
-            </div>
-            <div class="pokemon_info">
-              <div class="pokemon_info_number">№001</div>
-              <div class="pokemon_info_name">Бульбазавар</div>
-              <div>
-                <span class="pokemon_info_type_grass">Трава</span
-                ><span class="pokemon_info_type_poison">Яд</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pokemon_container">
-          <div>
-            <div class="pokemon_img">
-              <img src="" />
-            </div>
-            <div class="pokemon_info">
-              <div class="pokemon_info_number">№001</div>
-              <div class="pokemon_info_name">Бульбазавар</div>
-              <div>
-                <span class="pokemon_info_type_grass">Трава</span
-                ><span class="pokemon_info_type_poison">Яд</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pokemon_container">
-          <div>
-            <div class="pokemon_img">
-              <img src="" />
-            </div>
-            <div class="pokemon_info">
-              <div class="pokemon_info_number">№001</div>
-              <div class="pokemon_info_name">Бульбазавар</div>
-              <div>
-                <span class="pokemon_info_type_grass">Трава</span
-                ><span class="pokemon_info_type_poison">Яд</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pokemon_container">
-          <div>
-            <div class="pokemon_img">
-              <img src="" />
-            </div>
-            <div class="pokemon_info">
-              <div class="pokemon_info_number">№001</div>
-              <div class="pokemon_info_name">Бульбазавар</div>
-              <div>
-                <span class="pokemon_info_type_grass">Трава</span
-                ><span class="pokemon_info_type_poison">Яд</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <img
+        src="./assets/icons/bullbasaur.svg"
+        alt=""
+        id="svg_loader_bullbasaur"
+        class="svg_loader animated bounce infinite"
+      />
+      <img
+        style="display:none"
+        src="./assets/icons/charmander.svg"
+        alt=""
+        id="svg_loader_charmander"
+        class="svg_loader animated bounce infinite"
+      />
+      <div class="pokemons_containers" id="pokemons_containers">
+        <div
+          class="pokemons_containers_center"
+          id="pokemons_containers_center"
+        ></div>
       </div>
+
+      <div class="pokemons_current_container" id="pokemons_current_container">
+
+      </div>
+
+      <button id="back_to_pokedex" style="display:none">
+        Вернутся в Покедекс
+      </button>
     </section>
 
     <footer>
