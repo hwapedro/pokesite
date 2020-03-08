@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("./SourseSansPro/SourceSansPro-Regular.ttf") format("woff2"),
+    url("./SourseSansPro/SourceSansPro-Regular.ttf") format("woff"),
+    url("./SourseSansPro/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("./SourseSansPro/SourceSansPro-Light.ttf") format("woff2"),
+    url("./SourseSansPro/SourceSansPro-Light.ttf") format("woff"),
+    url("./SourseSansPro/SourceSansPro-Light.ttf") format("truetype");
+}
